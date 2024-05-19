@@ -15,7 +15,7 @@ const Container = styled.div`
   align-items: center;
   padding: 10px 0px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 890px) {
     width: 100%;
     padding: 10px;
   }
@@ -36,7 +36,7 @@ const List = styled.ul`
   gap: 20px;
   list-style: none;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 890px) {
     display: none;
   }
 `;
@@ -81,7 +81,7 @@ const Navbar = () => {
         </Links>
         <Icons>
           <Icon src="./img/search.png" />
-          <Button>منو استخدام کن</Button>
+          <Button> درخواست بده</Button>
         </Icons>
       </Container>
     </Section>

@@ -12,7 +12,7 @@ const Section = styled.div`
   justify-content: space-between;
   flex-direction: column;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 890px) {
     height: 200vh;
   }
 `;
@@ -25,7 +25,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 890px) {
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -40,7 +40,7 @@ const Left = styled.div`
   justify-content: center;
   gap: 20px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 890px) {
     flex: 1;
     align-items: center;
   }
@@ -49,7 +49,7 @@ const Left = styled.div`
 const Title = styled.h1`
   font-size: 54px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 890px) {
     text-align: center;
     font-size: 74px;
   }
@@ -72,7 +72,7 @@ const Subtitle = styled.h2`
 const Desc = styled.p`
   font-size: 24px;
   color: lightgray;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 890px) {
     padding: 20px;
     text-align: center;
   }
@@ -92,7 +92,7 @@ const Button = styled.button`
 const Right = styled.div`
   flex: 3;
   position: relative;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 890px) {
     flex: 1;
     width: 100%;
   }
@@ -110,7 +110,7 @@ const Img = styled.img`
   margin: auto;
   animation: animate 2s infinite ease alternate;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 890px) {
     width: 450px;
     height: 450px;
   }
