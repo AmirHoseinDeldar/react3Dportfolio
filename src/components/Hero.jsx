@@ -53,6 +53,14 @@ const Title = styled.h1`
     text-align: center;
     font-size: 74px;
   }
+  @media only screen and (max-width: 1062px) {
+    text-align: center;
+    font-size: 24px;
+  }
+  @media only screen and (max-width: 1200px) {
+    text-align: center;
+    font-size: 34px;
+  }
 `;
 
 const WhatWeDo = styled.div`

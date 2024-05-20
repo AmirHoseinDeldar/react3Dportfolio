@@ -1,8 +1,72 @@
+import React from "react";
+import * as THREE from "three";
+import { useGLTF } from "@react-three/drei";
 
-const Shoe = () => {
+export default function Shoe({ color, ...props }) {
+  const { nodes, materials } = useGLTF("/shoe.gltf");
+
   return (
-    <div>Shoe</div>
-  )
+    <group {...props} dispose={null}>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.shoe.geometry}
+        material={materials.laces}
+        material-envMapInstensity={0.8}
+      />
+      <mesh castShadow receiveShadow geometry={nodes.shoe_1.geometry}>
+        <meshStandardMaterial
+          color="purple"
+          aoMap={materials.mesh.aoMap}
+          normalMap={materials.mesh.normalMap}
+          normalMap-encoding={THREE.linearEncoding}
+          roughnessMap={materials.mesh.roughnessMap}
+          metalnessMap={materials.mesh.metalnessMap}
+        />
+      </mesh>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.shoe_2.geometry}
+        material={materials.caps}
+        material-envMapInstensity={0.8}
+      />{" "}
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.shoe_3.geometry}
+        material={materials.inner}
+        material-envMapInstensity={0.8}
+      />{" "}
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.shoe_4.geometry}
+        material={materials.sole}
+        material-envMapInstensity={0.8}
+      />{" "}
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.shoe_5.geometry}
+        material={materials.stripes}
+        material-envMapInstensity={0.8}
+      />{" "}
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.shoe_6.geometry}
+        material={materials.band}
+        material-envMapInstensity={0.8}
+      />{" "}
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.shoe_7.geometry}
+        material={materials.patch}
+        material-envMapInstensity={0.8}
+      />
+    </group>
+  );
 }
-
-export default Shoe
+useGLTF.preload("/shoe.gltf");
