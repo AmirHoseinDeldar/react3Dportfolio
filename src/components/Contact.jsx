@@ -79,12 +79,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(
-        "service_bu7ijz6",
-        "template_rsslqc5",
-        ref.current,
-        "lVceWBp3o00l4z9Vm"
-      )
+      .sendForm("service_id", "template_id", ref.current, "public_key")
       .then(
         (result) => {
           console.log(result.text);
